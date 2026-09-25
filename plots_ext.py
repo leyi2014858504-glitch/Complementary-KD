@@ -287,10 +287,109 @@ def fig_beta_sweep():
     _save(fig, 'fig_beta_sweep.png')
 
 
+def fig_alpha_gap(df):
+    """figure_1 replacement: final gen gap vs alpha, 1x4, delta+Holm stars."""
+    import pickle
+    st = pd.read_csv('results_ext/stats_alpha.csv')
+    st = st[(st['metric'] == 'final_gen_gap') &
+            (st['contrast'] == 'Distill-S vs Baseline-Half')]
+    pmap = {(r.dataset, r.alpha): r.p_holm for r in st.itertuples()}
+
+    groups = ['Baseline-Half', 'Baseline-Full', 'Baseline-LS', 'Distill-S']
+    datasets = ['wine', 'breastcancer', 'digits', 'glass']
+    agg = _agg(df, 'final_gen_gap')
+    alphas = sorted(df['alpha'].unique())
+
+    fig, axes = plt.subplots(1, 4, figsize=(20, 4.2))
+    for ax, ds in zip(axes, datasets):
+        for grp in groups:
+            gd = agg[(agg['dataset'] == ds) & (agg['group'] == grp)] \
+                .sort_values('alpha')
+            ax.errorbar(gd['alpha'], gd['mean'], yerr=gd['std'], label=grp,
+                        color=COLORS[grp], marker=MARKERS[grp], linestyle=LS[grp],
+                        capsize=3, markersize=5, linewidth=2.0)
+        dsd = agg[(agg['dataset'] == ds) &
+                  (agg['group'] == 'Distill-S')].sort_values('alpha')
+        bh = agg[(agg['dataset'] == ds) &
+                 (agg['group'] == 'Baseline-Half')].sort_values('alpha')
+        for i, a in enumerate(alphas):
+            delta = dsd.iloc[i]['mean'] - bh.iloc[i]['mean']
+            ph = pmap.get((ds, a), 1.0)
+            star = '' if ph >= 0.05 else ('*' if ph < 0.05 else '')
+            if ph < 0.001:
+                star = '***'
+            elif ph < 0.01:
+                star = '**'
+            elif ph < 0.05:
+                star = '*'
+            ax.annotate(f"{delta:+.3f}{star}",
+                        xy=(a, dsd.iloc[i]['mean'] + dsd.iloc[i]['std'] + 0.004),
+                        fontsize=8, color=COLORS['Distill-S'], ha='center')
+        ax.set_title(ds, fontsize=11)
+        ax.set_xlabel(r'$\alpha$ (overlap)')
+        ax.grid(True, alpha=0.3)
+        ax.tick_params(labelsize=9)
+    axes[0].set_ylabel('Final gen gap')
+    handles = [plt.Line2D([0], [0], color=COLORS[g], marker=MARKERS[g],
+                          linestyle=LS[g], linewidth=2, label=g)
+               for g in groups]
+    fig.legend(handles=handles, loc='upper center', bbox_to_anchor=(0.5, 1.02),
+               ncol=4, fontsize=10, frameon=False)
+    fig.tight_layout()
+    _save(fig, 'fig_alpha_gap.png')
+
+
+def fig_gap_curves():
+    """figure_2 replacement: mean gen-gap curves (alpha=0 vs 1 vs BH)."""
+    import pickle
+    store = pickle.load(open('results_ext/alpha_curves.pkl', 'rb'))
+    datasets = ['wine', 'breastcancer', 'digits', 'glass']
+
+    def curves(ds, grp, alpha=None):
+        arrs = []
+        for k, v in store.items():
+            if k[0] != ds or k[1] != grp:
+                continue
+            if grp == 'Distill-S' and (len(k) < 4 or k[2] != alpha):
+                continue
+            c = np.asarray(v['gen_gap_curve'], dtype=float)
+            arrs.append(c)
+        m = min(len(a) for a in arrs)
+        M = np.stack([a[:m] for a in arrs])
+        return np.nanmean(M, axis=0), np.nanstd(M, axis=0)
+
+    fig, axes = plt.subplots(1, 4, figsize=(20, 4.2))
+    for ax, ds in zip(axes, datasets):
+        for label, fn, color, style in [
+                ('Distill-S $\\alpha{=}0$',
+                 lambda: curves(ds, 'Distill-S', 0.0), '#d62728', '-'),
+                ('Distill-S $\\alpha{=}1$',
+                 lambda: curves(ds, 'Distill-S', 1.0), '#ff7f0e', '-'),
+                ('Baseline-Half',
+                 lambda: curves(ds, 'Baseline-Half'), '#2ca02c', '--')]:
+            mean, std = fn()
+            x = np.arange(1, len(mean) + 1)
+            ax.plot(x, mean, color=color, linestyle=style, label=label,
+                    linewidth=2.0)
+            ax.fill_between(x, mean - std, mean + std, color=color, alpha=0.15)
+        ax.set_title(ds, fontsize=11)
+        ax.set_xlabel('epoch')
+        ax.grid(True, alpha=0.3)
+        ax.tick_params(labelsize=9)
+    axes[0].set_ylabel('Gen gap (train - val)')
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5, 1.02),
+               ncol=3, fontsize=10, frameon=False)
+    fig.tight_layout()
+    _save(fig, 'fig_gap_curves.png')
+
+
 def main():
     os.makedirs(FIG_DIR, exist_ok=True)
     df = pd.read_csv('results_ext/alpha_results.csv')
     print('Tabular figures:')
+    fig_alpha_gap(df)
+    fig_gap_curves()
     fig_test_and_ece(df)
     fig_teacher_quality(df)
     fig_agreement(df)
