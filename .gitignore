@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# re-downloadable datasets (FMNIST/CIFAR/Yeast raw data)
+data/
+
+# per-run recovery caches (regenerable, large)
+*.pkl
+
+# archives / editor leftovers
+*.zip
+*.tmp

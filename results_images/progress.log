@@ -1,0 +1,180 @@
+10:46:50 fashion_mnist Baseline-Half seed=0 test_acc=0.9150
+10:49:11 fashion_mnist Baseline-LS seed=0 test_acc=0.9194
+10:53:41 fashion_mnist Baseline-Full seed=0 test_acc=0.9200
+11:03:09 fashion_mnist Distill-S alpha=0.0 seed=0 test_acc=0.9260
+11:11:43 fashion_mnist Distill-S alpha=0.2 seed=0 test_acc=0.9222
+11:18:31 fashion_mnist Distill-S alpha=0.4 seed=0 test_acc=0.9143
+11:24:54 fashion_mnist Distill-S alpha=0.6 seed=0 test_acc=0.9160
+11:32:27 fashion_mnist Distill-S alpha=0.8 seed=0 test_acc=0.9108
+11:37:53 fashion_mnist Distill-S alpha=1.0 seed=0 test_acc=0.9124
+11:40:32 fashion_mnist Baseline-Half seed=1 test_acc=0.9109
+11:43:45 fashion_mnist Baseline-LS seed=1 test_acc=0.9200
+11:47:09 fashion_mnist Baseline-Full seed=1 test_acc=0.9219
+11:55:35 fashion_mnist Distill-S alpha=0.0 seed=1 test_acc=0.9193
+12:02:26 fashion_mnist Distill-S alpha=0.2 seed=1 test_acc=0.9187
+12:09:45 fashion_mnist Distill-S alpha=0.4 seed=1 test_acc=0.9215
+12:15:41 fashion_mnist Distill-S alpha=0.6 seed=1 test_acc=0.9128
+12:22:13 fashion_mnist Distill-S alpha=0.8 seed=1 test_acc=0.9070
+12:28:14 fashion_mnist Distill-S alpha=1.0 seed=1 test_acc=0.9131
+12:30:31 fashion_mnist Baseline-Half seed=2 test_acc=0.9073
+12:33:33 fashion_mnist Baseline-LS seed=2 test_acc=0.9189
+12:37:19 fashion_mnist Baseline-Full seed=2 test_acc=0.9240
+12:44:14 fashion_mnist Distill-S alpha=0.0 seed=2 test_acc=0.9221
+12:51:56 fashion_mnist Distill-S alpha=0.2 seed=2 test_acc=0.9232
+12:59:11 fashion_mnist Distill-S alpha=0.4 seed=2 test_acc=0.9157
+13:05:05 fashion_mnist Distill-S alpha=0.6 seed=2 test_acc=0.9139
+13:11:57 fashion_mnist Distill-S alpha=0.8 seed=2 test_acc=0.9136
+13:18:28 fashion_mnist Distill-S alpha=1.0 seed=2 test_acc=0.9097
+13:20:27 fashion_mnist Baseline-Half seed=3 test_acc=0.9127
+13:23:05 fashion_mnist Baseline-LS seed=3 test_acc=0.9151
+13:27:20 fashion_mnist Baseline-Full seed=3 test_acc=0.9227
+13:35:54 fashion_mnist Distill-S alpha=0.0 seed=3 test_acc=0.9267
+13:42:06 fashion_mnist Distill-S alpha=0.2 seed=3 test_acc=0.9220
+13:50:02 fashion_mnist Distill-S alpha=0.4 seed=3 test_acc=0.9190
+13:56:13 fashion_mnist Distill-S alpha=0.6 seed=3 test_acc=0.9083
+14:02:45 fashion_mnist Distill-S alpha=0.8 seed=3 test_acc=0.9081
+14:09:17 fashion_mnist Distill-S alpha=1.0 seed=3 test_acc=0.9091
+14:11:16 fashion_mnist Baseline-Half seed=4 test_acc=0.9130
+14:14:04 fashion_mnist Baseline-LS seed=4 test_acc=0.9181
+14:18:03 fashion_mnist Baseline-Full seed=4 test_acc=0.9241
+14:26:52 fashion_mnist Distill-S alpha=0.0 seed=4 test_acc=0.9266
+14:35:16 fashion_mnist Distill-S alpha=0.2 seed=4 test_acc=0.9183
+14:43:21 fashion_mnist Distill-S alpha=0.4 seed=4 test_acc=0.9214
+14:49:37 fashion_mnist Distill-S alpha=0.6 seed=4 test_acc=0.9108
+14:56:18 fashion_mnist Distill-S alpha=0.8 seed=4 test_acc=0.9124
+15:02:42 fashion_mnist Distill-S alpha=1.0 seed=4 test_acc=0.9190
+15:05:05 fashion_mnist Baseline-Half seed=5 test_acc=0.9129
+15:07:32 fashion_mnist Baseline-LS seed=5 test_acc=0.9189
+15:11:37 fashion_mnist Baseline-Full seed=5 test_acc=0.9288
+15:18:15 fashion_mnist Distill-S alpha=0.0 seed=5 test_acc=0.9198
+15:25:22 fashion_mnist Distill-S alpha=0.2 seed=5 test_acc=0.9190
+15:32:17 fashion_mnist Distill-S alpha=0.4 seed=5 test_acc=0.9127
+15:39:15 fashion_mnist Distill-S alpha=0.6 seed=5 test_acc=0.9103
+15:45:02 fashion_mnist Distill-S alpha=0.8 seed=5 test_acc=0.9098
+15:52:18 fashion_mnist Distill-S alpha=1.0 seed=5 test_acc=0.9117
+15:54:04 fashion_mnist Baseline-Half seed=6 test_acc=0.9106
+15:55:47 fashion_mnist Baseline-LS seed=6 test_acc=0.9110
+15:59:53 fashion_mnist Baseline-Full seed=6 test_acc=0.9195
+16:08:21 fashion_mnist Distill-S alpha=0.0 seed=6 test_acc=0.9220
+16:18:44 fashion_mnist Distill-S alpha=0.2 seed=6 test_acc=0.9282
+16:27:03 fashion_mnist Distill-S alpha=0.4 seed=6 test_acc=0.9201
+16:33:27 fashion_mnist Distill-S alpha=0.6 seed=6 test_acc=0.9057
+16:40:12 fashion_mnist Distill-S alpha=0.8 seed=6 test_acc=0.9117
+16:47:06 fashion_mnist Distill-S alpha=1.0 seed=6 test_acc=0.9096
+16:49:13 fashion_mnist Baseline-Half seed=7 test_acc=0.9155
+16:52:17 fashion_mnist Baseline-LS seed=7 test_acc=0.9213
+16:56:03 fashion_mnist Baseline-Full seed=7 test_acc=0.9218
+17:04:44 fashion_mnist Distill-S alpha=0.0 seed=7 test_acc=0.9246
+17:15:42 fashion_mnist Distill-S alpha=0.2 seed=7 test_acc=0.9237
+17:23:34 fashion_mnist Distill-S alpha=0.4 seed=7 test_acc=0.9194
+17:29:43 fashion_mnist Distill-S alpha=0.6 seed=7 test_acc=0.9159
+17:36:17 fashion_mnist Distill-S alpha=0.8 seed=7 test_acc=0.9186
+17:42:40 fashion_mnist Distill-S alpha=1.0 seed=7 test_acc=0.9127
+17:45:33 fashion_mnist Baseline-Half seed=8 test_acc=0.9132
+17:50:00 fashion_mnist Baseline-LS seed=8 test_acc=0.9265
+17:54:14 fashion_mnist Baseline-Full seed=8 test_acc=0.9194
+18:02:51 fashion_mnist Distill-S alpha=0.0 seed=8 test_acc=0.9244
+18:12:20 fashion_mnist Distill-S alpha=0.2 seed=8 test_acc=0.9246
+18:21:54 fashion_mnist Distill-S alpha=0.4 seed=8 test_acc=0.9252
+18:28:43 fashion_mnist Distill-S alpha=0.6 seed=8 test_acc=0.9156
+18:36:22 fashion_mnist Distill-S alpha=0.8 seed=8 test_acc=0.9163
+18:43:31 fashion_mnist Distill-S alpha=1.0 seed=8 test_acc=0.9150
+18:45:49 fashion_mnist Baseline-Half seed=9 test_acc=0.9053
+18:48:54 fashion_mnist Baseline-LS seed=9 test_acc=0.9220
+18:52:33 fashion_mnist Baseline-Full seed=9 test_acc=0.9265
+19:00:36 fashion_mnist Distill-S alpha=0.0 seed=9 test_acc=0.9236
+19:07:40 fashion_mnist Distill-S alpha=0.2 seed=9 test_acc=0.9211
+19:14:22 fashion_mnist Distill-S alpha=0.4 seed=9 test_acc=0.9072
+19:20:45 fashion_mnist Distill-S alpha=0.6 seed=9 test_acc=0.9071
+19:26:28 fashion_mnist Distill-S alpha=0.8 seed=9 test_acc=0.9110
+19:33:24 fashion_mnist Distill-S alpha=1.0 seed=9 test_acc=0.9063
+19:35:19 fashion_mnist Baseline-Half seed=10 test_acc=0.9037
+19:37:22 fashion_mnist Baseline-LS seed=10 test_acc=0.9177
+19:42:08 fashion_mnist Baseline-Full seed=10 test_acc=0.9257
+19:51:04 fashion_mnist Distill-S alpha=0.0 seed=10 test_acc=0.9222
+20:00:30 fashion_mnist Distill-S alpha=0.2 seed=10 test_acc=0.9186
+20:06:55 fashion_mnist Distill-S alpha=0.4 seed=10 test_acc=0.9110
+20:13:38 fashion_mnist Distill-S alpha=0.6 seed=10 test_acc=0.9052
+20:20:29 fashion_mnist Distill-S alpha=0.8 seed=10 test_acc=0.9036
+20:27:41 fashion_mnist Distill-S alpha=1.0 seed=10 test_acc=0.9063
+20:29:35 fashion_mnist Baseline-Half seed=11 test_acc=0.9122
+20:32:32 fashion_mnist Baseline-LS seed=11 test_acc=0.9174
+20:36:15 fashion_mnist Baseline-Full seed=11 test_acc=0.9271
+20:44:08 fashion_mnist Distill-S alpha=0.0 seed=11 test_acc=0.9211
+20:51:45 fashion_mnist Distill-S alpha=0.2 seed=11 test_acc=0.9219
+20:57:39 fashion_mnist Distill-S alpha=0.4 seed=11 test_acc=0.9163
+21:03:53 fashion_mnist Distill-S alpha=0.6 seed=11 test_acc=0.9180
+21:10:38 fashion_mnist Distill-S alpha=0.8 seed=11 test_acc=0.9147
+21:17:18 fashion_mnist Distill-S alpha=1.0 seed=11 test_acc=0.9150
+21:19:25 fashion_mnist Baseline-Half seed=12 test_acc=0.9122
+21:21:50 fashion_mnist Baseline-LS seed=12 test_acc=0.9215
+21:26:11 fashion_mnist Baseline-Full seed=12 test_acc=0.9263
+21:34:26 fashion_mnist Distill-S alpha=0.0 seed=12 test_acc=0.9233
+21:41:18 fashion_mnist Distill-S alpha=0.2 seed=12 test_acc=0.9191
+21:48:07 fashion_mnist Distill-S alpha=0.4 seed=12 test_acc=0.9218
+21:54:34 fashion_mnist Distill-S alpha=0.6 seed=12 test_acc=0.9148
+22:01:08 fashion_mnist Distill-S alpha=0.8 seed=12 test_acc=0.9153
+22:06:30 fashion_mnist Distill-S alpha=1.0 seed=12 test_acc=0.9119
+22:08:27 fashion_mnist Baseline-Half seed=13 test_acc=0.9105
+22:12:24 fashion_mnist Baseline-LS seed=13 test_acc=0.9239
+22:16:55 fashion_mnist Baseline-Full seed=13 test_acc=0.9261
+22:24:51 fashion_mnist Distill-S alpha=0.0 seed=13 test_acc=0.9214
+22:33:39 fashion_mnist Distill-S alpha=0.2 seed=13 test_acc=0.9246
+22:40:11 fashion_mnist Distill-S alpha=0.4 seed=13 test_acc=0.9148
+22:46:15 fashion_mnist Distill-S alpha=0.6 seed=13 test_acc=0.9072
+22:52:10 fashion_mnist Distill-S alpha=0.8 seed=13 test_acc=0.9085
+22:57:45 fashion_mnist Distill-S alpha=1.0 seed=13 test_acc=0.9040
+23:00:05 fashion_mnist Baseline-Half seed=14 test_acc=0.9132
+23:03:04 fashion_mnist Baseline-LS seed=14 test_acc=0.9251
+23:06:33 fashion_mnist Baseline-Full seed=14 test_acc=0.9225
+23:13:22 fashion_mnist Distill-S alpha=0.0 seed=14 test_acc=0.9184
+23:19:59 fashion_mnist Distill-S alpha=0.2 seed=14 test_acc=0.9190
+23:26:07 fashion_mnist Distill-S alpha=0.4 seed=14 test_acc=0.9176
+23:32:10 fashion_mnist Distill-S alpha=0.6 seed=14 test_acc=0.9159
+23:38:18 fashion_mnist Distill-S alpha=0.8 seed=14 test_acc=0.9146
+23:44:21 fashion_mnist Distill-S alpha=1.0 seed=14 test_acc=0.9127
+23:46:53 fashion_mnist Baseline-Half seed=15 test_acc=0.9138
+23:48:51 fashion_mnist Baseline-LS seed=15 test_acc=0.9126
+23:52:30 fashion_mnist Baseline-Full seed=15 test_acc=0.9279
+23:59:55 fashion_mnist Distill-S alpha=0.0 seed=15 test_acc=0.9240
+00:06:19 fashion_mnist Distill-S alpha=0.2 seed=15 test_acc=0.9158
+00:12:34 fashion_mnist Distill-S alpha=0.4 seed=15 test_acc=0.9205
+00:18:04 fashion_mnist Distill-S alpha=0.6 seed=15 test_acc=0.9131
+00:24:22 fashion_mnist Distill-S alpha=0.8 seed=15 test_acc=0.9152
+00:30:42 fashion_mnist Distill-S alpha=1.0 seed=15 test_acc=0.9145
+00:32:25 fashion_mnist Baseline-Half seed=16 test_acc=0.9102
+00:34:39 fashion_mnist Baseline-LS seed=16 test_acc=0.9163
+00:38:37 fashion_mnist Baseline-Full seed=16 test_acc=0.9241
+00:44:46 fashion_mnist Distill-S alpha=0.0 seed=16 test_acc=0.9205
+00:53:03 fashion_mnist Distill-S alpha=0.2 seed=16 test_acc=0.9230
+01:01:22 fashion_mnist Distill-S alpha=0.4 seed=16 test_acc=0.9223
+01:07:22 fashion_mnist Distill-S alpha=0.6 seed=16 test_acc=0.9171
+01:13:33 fashion_mnist Distill-S alpha=0.8 seed=16 test_acc=0.9190
+01:19:40 fashion_mnist Distill-S alpha=1.0 seed=16 test_acc=0.9102
+01:22:00 fashion_mnist Baseline-Half seed=17 test_acc=0.9144
+01:25:53 fashion_mnist Baseline-LS seed=17 test_acc=0.9212
+01:29:35 fashion_mnist Baseline-Full seed=17 test_acc=0.9265
+01:37:32 fashion_mnist Distill-S alpha=0.0 seed=17 test_acc=0.9215
+01:44:07 fashion_mnist Distill-S alpha=0.2 seed=17 test_acc=0.9199
+01:50:41 fashion_mnist Distill-S alpha=0.4 seed=17 test_acc=0.9211
+01:56:31 fashion_mnist Distill-S alpha=0.6 seed=17 test_acc=0.9085
+02:02:47 fashion_mnist Distill-S alpha=0.8 seed=17 test_acc=0.9107
+02:08:53 fashion_mnist Distill-S alpha=1.0 seed=17 test_acc=0.9048
+02:10:38 fashion_mnist Baseline-Half seed=18 test_acc=0.9123
+02:12:49 fashion_mnist Baseline-LS seed=18 test_acc=0.9174
+02:16:19 fashion_mnist Baseline-Full seed=18 test_acc=0.9202
+02:24:54 fashion_mnist Distill-S alpha=0.0 seed=18 test_acc=0.9256
+02:31:11 fashion_mnist Distill-S alpha=0.2 seed=18 test_acc=0.9220
+02:37:31 fashion_mnist Distill-S alpha=0.4 seed=18 test_acc=0.9109
+02:43:57 fashion_mnist Distill-S alpha=0.6 seed=18 test_acc=0.9106
+02:49:46 fashion_mnist Distill-S alpha=0.8 seed=18 test_acc=0.9106
+02:55:47 fashion_mnist Distill-S alpha=1.0 seed=18 test_acc=0.9109
+02:57:40 fashion_mnist Baseline-Half seed=19 test_acc=0.9100
+03:00:52 fashion_mnist Baseline-LS seed=19 test_acc=0.9257
+03:04:43 fashion_mnist Baseline-Full seed=19 test_acc=0.9242
+03:13:11 fashion_mnist Distill-S alpha=0.0 seed=19 test_acc=0.9224
+03:19:47 fashion_mnist Distill-S alpha=0.2 seed=19 test_acc=0.9197
+03:26:09 fashion_mnist Distill-S alpha=0.4 seed=19 test_acc=0.9168
+03:32:24 fashion_mnist Distill-S alpha=0.6 seed=19 test_acc=0.9108
+03:38:30 fashion_mnist Distill-S alpha=0.8 seed=19 test_acc=0.9093
+03:44:26 fashion_mnist Distill-S alpha=1.0 seed=19 test_acc=0.9105

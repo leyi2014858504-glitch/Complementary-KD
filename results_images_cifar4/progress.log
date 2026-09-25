@@ -1,0 +1,9 @@
+00:00:13 cifar10 Baseline-Half seed=4 test_acc=0.7551
+00:01:22 cifar10 Baseline-LS seed=4 test_acc=0.7684
+00:03:11 cifar10 Baseline-Full seed=4 test_acc=0.7781
+00:07:34 cifar10 Distill-S alpha=0.0 seed=4 test_acc=0.7863
+00:11:33 cifar10 Distill-S alpha=0.2 seed=4 test_acc=0.7846
+00:14:29 cifar10 Distill-S alpha=0.4 seed=4 test_acc=0.7715
+00:17:25 cifar10 Distill-S alpha=0.6 seed=4 test_acc=0.7651
+00:20:18 cifar10 Distill-S alpha=0.8 seed=4 test_acc=0.7479
+00:23:15 cifar10 Distill-S alpha=1.0 seed=4 test_acc=0.7612

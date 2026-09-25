@@ -1,0 +1,5 @@
+11:41:05 fashion_mnist Baseline-Half seed=0 test_acc=0.8532
+11:41:12 fashion_mnist Baseline-LS seed=0 test_acc=0.8378
+11:41:19 fashion_mnist Baseline-Full seed=0 test_acc=0.8621
+11:41:26 fashion_mnist Distill-S alpha=0.0 seed=0 test_acc=0.8483
+11:41:33 fashion_mnist Distill-S alpha=1.0 seed=0 test_acc=0.8576

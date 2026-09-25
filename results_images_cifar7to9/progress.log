@@ -1,0 +1,27 @@
+00:24:45 cifar10 Baseline-Half seed=7 test_acc=0.7536
+00:25:56 cifar10 Baseline-LS seed=7 test_acc=0.7763
+00:27:51 cifar10 Baseline-Full seed=7 test_acc=0.7928
+00:31:13 cifar10 Distill-S alpha=0.0 seed=7 test_acc=0.7775
+00:35:28 cifar10 Distill-S alpha=0.2 seed=7 test_acc=0.7894
+00:38:13 cifar10 Distill-S alpha=0.4 seed=7 test_acc=0.7528
+00:41:02 cifar10 Distill-S alpha=0.6 seed=7 test_acc=0.7613
+00:43:58 cifar10 Distill-S alpha=0.8 seed=7 test_acc=0.7514
+00:46:58 cifar10 Distill-S alpha=1.0 seed=7 test_acc=0.7492
+00:47:53 cifar10 Baseline-Half seed=8 test_acc=0.7303
+00:48:54 cifar10 Baseline-LS seed=8 test_acc=0.7567
+00:50:41 cifar10 Baseline-Full seed=8 test_acc=0.7984
+00:54:45 cifar10 Distill-S alpha=0.0 seed=8 test_acc=0.7907
+00:59:11 cifar10 Distill-S alpha=0.2 seed=8 test_acc=0.7905
+01:02:00 cifar10 Distill-S alpha=0.4 seed=8 test_acc=0.7609
+10:27:02 cifar10 Distill-S alpha=0.6 seed=8 test_acc=0.7556
+10:28:35 cifar10 Distill-S alpha=0.8 seed=8 test_acc=0.7529
+10:30:04 cifar10 Distill-S alpha=1.0 seed=8 test_acc=0.7519
+10:30:36 cifar10 Baseline-Half seed=9 test_acc=0.7447
+10:31:20 cifar10 Baseline-LS seed=9 test_acc=0.7717
+10:32:29 cifar10 Baseline-Full seed=9 test_acc=0.7989
+10:35:04 cifar10 Distill-S alpha=0.0 seed=9 test_acc=0.7927
+10:37:49 cifar10 Distill-S alpha=0.2 seed=9 test_acc=0.7832
+10:39:29 cifar10 Distill-S alpha=0.4 seed=9 test_acc=0.7644
+10:41:13 cifar10 Distill-S alpha=0.6 seed=9 test_acc=0.7551
+10:42:46 cifar10 Distill-S alpha=0.8 seed=9 test_acc=0.7512
+10:44:17 cifar10 Distill-S alpha=1.0 seed=9 test_acc=0.7412

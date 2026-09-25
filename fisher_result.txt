@@ -1,0 +1,4 @@
+Wine             classes=3  samples=178  features=13  LDA_dims=2  Fisher_ratio=19.6215
+BreastCancer     classes=2  samples=569  features=30  LDA_dims=1  Fisher_ratio=11559.4329
+Digits           classes=10  samples=1797  features=64  LDA_dims=9  Fisher_ratio=68.2391
+Glass            classes=6  samples=214  features=9  LDA_dims=5  Fisher_ratio=933681.2997
